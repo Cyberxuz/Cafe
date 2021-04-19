@@ -1,9 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backet"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/orva"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                ></ImageView>
+
+<!--            <TextView-->
+<!--                android:id="@+id/textviewprice"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="7"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:background="@drawable/ic_baseline_lens_24"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:gravity="center"-->
+
+<!--                ></TextView>-->
+        </RelativeLayout>
+    </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview1"></androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Products"
+        android:layout_margin="15dp"
+        ></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview2"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
