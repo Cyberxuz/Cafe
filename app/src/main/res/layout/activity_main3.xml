@@ -10,7 +10,7 @@
     <Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/purple_500"
+        android:background="#392B02"
         >
 
         <RelativeLayout
@@ -55,24 +55,25 @@
                 android:layout_marginRight="10dp"
                 ></ImageView>
 
-<!--            <TextView-->
-<!--                android:id="@+id/textviewprice"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="7"-->
-<!--                android:layout_alignParentEnd="true"-->
-<!--                android:layout_marginRight="10dp"-->
-<!--                android:background="@drawable/ic_baseline_lens_24"-->
-<!--                android:textColor="@color/white"-->
-<!--                android:gravity="center"-->
+            <TextView
+                android:id="@+id/textviewprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/ic_baseline_lens_24"
+                android:textColor="@color/white"
+                android:gravity="center"
 
-<!--                ></TextView>-->
+                ></TextView>
         </RelativeLayout>
     </Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/qwe222"
         android:id="@+id/recyclerview1"></androidx.recyclerview.widget.RecyclerView>
     <TextView
         android:layout_width="match_parent"
@@ -84,6 +85,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recyclerview2"
+        android:background="@drawable/back123"
         ></androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
