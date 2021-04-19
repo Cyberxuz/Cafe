@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             startActivity(new Intent(MainActivity.this,MainActivity3.class));
+                            finish();
 
                         }else {
                             Toast.makeText(MainActivity.this, "Error Register", Toast.LENGTH_SHORT).show();
@@ -49,5 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void register(View view) {
         startActivity(new Intent(MainActivity.this,MainActivity2.class));
+
     }
 }
