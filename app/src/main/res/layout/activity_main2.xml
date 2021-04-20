@@ -41,6 +41,7 @@
             android:id="@+id/edittext11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
 
 
 
@@ -93,6 +94,7 @@
             android:id="@+id/edittext33"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="phone"
 
 
 
@@ -112,6 +114,7 @@
         app:boxCornerRadiusBottomEnd="9dp"
         android:layout_marginTop="15dp"
         app:counterEnabled="true"
+
         app:counterMaxLength="15"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         >
@@ -120,6 +123,7 @@
             android:id="@+id/edittext44"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
 
 
             ></com.google.android.material.textfield.TextInputEditText>
@@ -145,6 +149,8 @@
             android:id="@+id/edittext55"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
 
 
 

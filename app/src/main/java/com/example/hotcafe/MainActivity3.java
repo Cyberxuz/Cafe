@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -20,12 +21,20 @@ public class MainActivity3 extends AppCompatActivity {
     ArrayList<Integer> integerArrayList2;
     ArrayList<String > stringArrayList2;
     MyAdapter2 myAdapter2;
-    ImageView imageView;
+    ImageView imageView,imageViewdrawer1;
     TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+
+        imageViewdrawer1=findViewById(R.id.drawer);
+        imageViewdrawer1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity3.this,MainActivity4.class));
+            }
+        });
 
         recyclerView=findViewById(R.id.recyclerview1);
         recyclerView2=findViewById(R.id.recyclerview2);
