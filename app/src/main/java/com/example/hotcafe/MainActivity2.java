@@ -48,8 +48,8 @@ public class MainActivity2 extends AppCompatActivity {
                 firebaseAuth.createUserWithEmailAndPassword(textInputEditText1.getText().toString(), textInputEditText4.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        Toast.makeText(MainActivity2.this, "Registratsiya bo`lding axir", Toast.LENGTH_SHORT).show();
 
+                        if (textInputEditText1.length()>14 && textInputEditText2.length()>3 && textInputEditText3.length()>12 && textInputEditText4.length()>8 && textInputEditText5.length()>8){
                         Register userRegister = new Register();
                         userRegister.setEmail(textInputEditText1.getText().toString());
                         userRegister.setUsername(textInputEditText2.getText().toString());
@@ -58,7 +58,26 @@ public class MainActivity2 extends AppCompatActivity {
                         databaseReference.push().setValue(userRegister);
                         progressBar.setVisibility(View.GONE);
                         startActivity(new Intent(MainActivity2.this, MainActivity.class));
+                        Toast.makeText(MainActivity2.this, "Registratsiya bo`lding", Toast.LENGTH_SHORT).show();
 
+                    }else {
+                            if (textInputEditText1.length()<14){
+                                textInputEditText1.setError("Email Yoz");
+                            }
+                            if (textInputEditText2.length()<3){
+                                textInputEditText2.setError("Odingni yaz");
+                            }
+                            if (textInputEditText3.length()<12){
+                                textInputEditText3.setError("Nomerni yaz");
+                            }
+                            if (textInputEditText4.length()<8){
+                                textInputEditText4.setError("Parol yaz");
+                            }
+                            if (textInputEditText5.length()<8){
+                                textInputEditText5.setError("Parol yaz");
+                            }
+                            Toast.makeText(MainActivity2.this, "Go'z bomi", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
 

@@ -51,16 +51,16 @@ public class MainActivity3 extends AppCompatActivity {
         integerArrayList2=new ArrayList<>();
         stringArrayList2=new ArrayList<>();
 
-        integerArrayList2.add(R.drawable.cate1);
-        integerArrayList2.add(R.drawable.cate2);
-        integerArrayList2.add(R.drawable.cate3);
         integerArrayList2.add(R.drawable.cate4);
         integerArrayList2.add(R.drawable.cate5);
-        stringArrayList2.add("Lag'mon");
-        stringArrayList2.add("sho'rva");
-        stringArrayList2.add("Tovuq");
+        integerArrayList2.add(R.drawable.cate2);
+        integerArrayList2.add(R.drawable.cate1);
+        integerArrayList2.add(R.drawable.cate3);
         stringArrayList2.add("Shashlik");
         stringArrayList2.add("Shirinlik");
+        stringArrayList2.add("Sho'rva");
+        stringArrayList2.add("Lag'mon");
+        stringArrayList2.add("Tovuq");
 
 
         recyclerView.setHasFixedSize(true);
